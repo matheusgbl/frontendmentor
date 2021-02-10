@@ -1,0 +1,243 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url(/images/bg-intro-desktop.png) no-repeat;
+  background-color: #ff7a7a;
+  min-height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.text-container {
+  color: #fff;
+  max-width: 480px;
+}
+
+.text-container h1 {
+  font-size: 50px;
+}
+
+.text-container p {
+  margin-top: 40px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.informations {
+  height: 60vh;
+  width: 90%;
+  max-width: 700px;
+  margin-left: 80px;
+}
+
+.informations .trial-btn {
+  width: 90%;
+  text-align: center;
+  background: #6055a5;
+  color: #fff;
+  padding: 25px 20px;
+  border: none;
+  border-radius: 8px;
+  padding-right: 30px;
+  font-size: 14px;
+  -webkit-box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.informations .trial-btn strong {
+  font-weight: 600;
+}
+
+.informations .error {
+  border: 2px solid #ff7a7a;
+}
+
+.container-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+  width: 90%;
+  height: 520px;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-items form {
+  margin: 2rem auto;
+  width: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -ms-grid;
+  display: grid;
+}
+
+.container-items form input:first-of-type {
+  margin-top: 1.5rem;
+}
+
+.container-items form input {
+  height: 3rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  border: 1px solid #9999;
+  outline: none;
+  padding: 15px;
+  font-weight: 600;
+  padding-left: 30px;
+}
+
+.container-items .claim-btn {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: #38cc8c;
+  font-weight: 600;
+  border: none;
+  height: 60px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  -webkit-box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.container-items span {
+  margin-top: 25px;
+  text-align: center;
+  color: #b9b6d3;
+}
+
+.container-items span strong {
+  color: #ff7a7a;
+}
+
+.error {
+  background: url("/images/icon-error.svg") no-repeat;
+  background-position: 95% center;
+  background-size: 1.5rem 1.5rem;
+}
+
+.form_error {
+  display: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: inherit;
+  color: #ff7a7a;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.content {
+  width: 100%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 1rem;
+}
+
+footer .attribution {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+  .container {
+    padding: 40px 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: -50px;
+  }
+  .container h1 {
+    font-size: 38px;
+  }
+  .container .text-container {
+    width: 90%;
+    margin-bottom: 20px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .informations {
+    width: 90%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+  }
+  .attribution {
+    text-align: center;
+    margin-top: auto;
+    position: relative;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

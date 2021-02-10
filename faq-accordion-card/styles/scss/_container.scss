@@ -1,0 +1,88 @@
+@import './variables';
+
+.wrapper {
+  background: #eee;
+  border-radius: 20px;
+  height: 500px;
+  width: 920px;
+  box-shadow: 0 50px 30px -20px rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-template-areas: 'images-wrapper accordion-wrapper';
+  gap: 1rem;
+
+  .image-wrapper {
+    position: relative;
+    grid-area: image-wrapper;
+    
+    .image-wrapper-inner {
+      background: 
+        url(/images/illustration-woman-online-desktop.svg) no-repeat,
+        url(/images/bg-pattern-desktop.svg) no-repeat;
+      background-position: 120% center, -580px - 300px;
+      height: 100%;
+    }
+
+    .box {
+      position: absolute;
+      background: url(/images/illustration-box-desktop.svg) no-repeat;
+      height: 300px;
+      width: 300px;
+      top: 205px;
+      left: -95px;
+    }
+  }
+
+  .accordion-wrapper {
+    grid-area: accordion-wrapper;
+    width: 100%;
+    padding: 40px 80px 0 30px;
+    h1 {
+      margin: 20px 0;
+    }
+
+    .accordion-container {
+      list-style: none;
+      
+      .accordion-item {
+        border-bottom: 1px solid $light-grayish-blue;
+        padding: 1rem 0;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.2s;
+        
+        &::after {
+          content: url(/images/icon-arrow-down.svg);
+          position: absolute;
+          right: 1rem;
+        }
+        
+        &:hover {
+          color: $soft-red;
+        }
+      }
+      
+      .accordion-item-header.active {
+        font-weight: 700;
+        color: $very-dark-grayish-blue;
+        
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+
+      .accordion-item-body {
+        max-height: 0;
+        overflow: hidden;
+        margin-bottom: 10px;
+        font-size: 12px;
+        color: $dark-grayish-blue;
+        transition: max-height .2s;
+
+        p {
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

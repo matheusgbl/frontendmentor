@@ -1,0 +1,67 @@
+@media(min-width: 280px) and (max-width: 812px) {
+  
+  .wrapper {
+    height: 550px;
+    margin: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'image-wrapper'
+      'accordion-wrapper';
+    
+    .image-wrapper {
+      height: 120px;
+
+      .image-wrapper-inner {
+        position: absolute;
+        background: url(/images/bg-pattern-mobile.svg) no-repeat;
+        background-position-x: center;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 300px;
+        width: 300px;
+      }
+
+      .box {
+        background: url(/images/illustration-woman-online-mobile.svg) no-repeat;
+        top: -105px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .accordion-wrapper {
+      font-size: 12px;
+      padding: 0 15px 0 15px;
+      margin-top: -50px;
+
+      h1 {
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      .accordion-container {
+        .accordion-item {
+          .accordion-item-header {
+            font-size: 14px;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  .atribution {
+    display: none;
+  }
+}
+
+@media (width: 280px) {
+  .wrapper {
+    height: 600px;
+
+    .accordion-wrapper {
+      padding: 20px 15px 0 15px;
+    }
+  }
+}

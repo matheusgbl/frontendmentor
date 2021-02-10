@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: #1849AB;
+}
+
+.attribution a:hover {
+  color: #ff9000;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background: 
+    -webkit-gradient(linear, left top, left bottom, from(hsl(273, 75%, 66%)) to (hsl(240, 73%, 65%)));
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  min-height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #1d1e35;
+}
+
+.wrapper {
+  background-color: #eee;
+  border-radius: 20px;
+  width: 920px;
+  height: 500px;
+  -webkit-box-shadow: 0 50px 30px -20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 50px 30px -20px rgba(0, 0, 0, 0.3);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 400px 1fr;
+  grid-template-columns: 400px 1fr;
+  grid-template-areas: 'image-wrapper accordion-wrapper';
+  gap: 1rem;
+}
+
+.wrapper .image-wrapper {
+  position: relative;
+  grid-area: image-wrapper;
+}
+
+.wrapper .image-wrapper .image-wrapper-inner {
+  background: 
+    url(/images/illustration-woman-online-desktop.svg) no-repeat,
+    url(/images/bg-pattern-desktop.svg) no-repeat;
+  background-position: 120% center, -510px -300px;
+  height: 100%;
+}
+
+.wrapper .image-wrapper .box {
+  position: absolute;
+  background: url(/images/illustration-box-desktop.svg) no-repeat;
+  width: 300px;
+  height: 300px;
+  top: 205px;
+  left: -95px;
+}
+
+.wrapper .accordion-wrapper {
+  grid-area: 'accordion wrapper';
+  width: 100%;
+  padding: 40px 80px 0 30px;
+}
+
+.wrapper .accordion-wrapper h1 {
+  margin: 20px 0;
+}
+
+.wrapper .accordion-wrapper .accordion-container {
+  list-style: none;
+}
+
+.wrapper .accordion-wrapper .accordion-container .accordion-item {
+  border-bottom: 1px solid #e7e7e9;
+}
+
+.wrapper .accordion-wrapper .accordion-container 
+.accordion-item .accordion-item-header {
+  color: #4a4b5e;
+  padding: 1rem 0;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ;
+  transition: all 0.2s;
+}
+
+.wrapper .accordion-wrapper .accordion-container 
+.accordion-item .accordion-item-header::after {
+  content: url(/images/icon-arrow-down.svg);
+  position: absolute;
+  right: 1rem;
+}
+
+.wrapper .accordion-wrapper .accordion-container 
+.accordion-item .accordion-item-header:hover {
+  color: #ff9000;
+}
+
+.wrapper .accordion-wrapper .accordion-container 
+.accordion-item .accordion-item-header.active {
+  font-weight: 700;
+  color: #ff9000;
+}
+
+.wrapper .accordion-wrapper .accordion-container 
+.accordion-item .accordion-item-header.active::after{
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.wrapper .accordion-wrapper .accordion-container 
+.accordion-item .accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #787887;
+  -webkit-transition: max-height .2s;
+  transition: max-height .2s;
+}
+
+.wrapper .accordion-wrapper .accordion-container 
+.accordion-item .accordion-item-body p {
+  line-height: 20px;
+}
+
+@media (min-height: 280px) and (max-width: 812px) {
+
+  .wrapper {
+    height: 550px;
+    margin: 20px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'image-wrapper accordion-wrapper';
+  }
+
+  .wrapper .image-wrapper {
+    height: 120px;
+  }
+
+  .wrapper .image-wrapper .image-wrapper-inner {
+    position: absolute;
+    background: url(/images/bg-pattern-mobile.svg) no-repeat;
+    background-position-x: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+  }
+
+  .wrapper .image-wrapper .box {
+    background: url(/images/illustration-woman-online-mobile.svg) no-repeat;
+    top: -150px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .wrapper .accordion-wrapper {
+    font-size: 12px;
+    padding: 0 15px 0 15px;
+    margin-top: -50px;
+  }
+
+  .wrapper .accordion-wrapper h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .wrapper .accordion-wrapper .accordion-container 
+  .accordion-item .accordion-item-header {
+    font-size: 14px;
+  }
+
+  .wrapper .accordion-wrapper .accordion-container 
+  .accordion-item .accordion-item-body {
+    font-size: 13px;
+  }
+
+  .attribution {
+    display: none;
+  }
+}
+
+@media (width: 280px) {
+  .wrapper {
+    height: 600px;
+  }
+  .wrapper .accordion-wrapper {
+    padding: 20px 15px 0 15px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

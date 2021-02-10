@@ -1,0 +1,17 @@
+@import './variables';
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+
+  a {
+    color: #1849AB;
+
+    &:hover {
+      color: $soft-red;
+    }
+  }
+}

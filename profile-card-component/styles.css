@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background: hsl(185, 75%, 39%);
+}
+
+.bg-top {
+  margin: auto;
+  display: flex;
+  z-index: -1;
+  position: absolute;
+  top: -480px;
+  left: -20px;
+}
+
+.bg-bot {
+  margin: auto;
+  display: flex;
+  z-index: -2;
+  position: fixed;
+  bottom: -380px;
+  right: -100px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 350px;
+  height: 400px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 250px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.background {
+  display: flex;
+}
+
+.background > img {
+  margin: 0 auto;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.profile {
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: -55px;
+}
+
+.profile-avatar > img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.name {
+  font-weight: 700;
+  text-align: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.age {
+  font-weight: 700;
+  color: hsl(0, 0%, 59%);
+  margin-left: 5px;
+}
+
+.name, .age {
+  float: inline-start;
+  display: inline;
+  padding-top: 10px;
+}
+
+.profile span {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: hsl(0, 0%, 59%);
+  font-weight: 700;
+}
+
+.border {
+  margin: 0 auto;
+  border: 1px hsl(0, 0%, 59%) solid;
+  opacity: 0.3;
+  margin-top: 30px;
+}
+
+.footer {
+  margin: auto;
+  column-count: 3;
+  margin-top: 30px;
+  width: 90%;
+}
+
+.footer p {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.footer span {
+  color:hsl(0, 0%, 59%);
+  line-height: 2.0;
+  text-align: center;
+}

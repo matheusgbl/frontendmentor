@@ -1,0 +1,13 @@
+@import './variables';
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 1rem;
+
+  .attribution {
+    color: white;
+    font-size: 11px;
+    text-align: center;
+  }
+}
