@@ -11,7 +11,7 @@ Thanks for checking out this front-end coding challenge.
 **To do this challenge, you need a basic understanding of HTML and CSS.**
 
 ## My solution
-![solution](https://user-images.githubusercontent.com/55060810/107970691-34fe8000-6f90-11eb-95b6-919ec4868bc8.jpg)
+![solution](https://user-images.githubusercontent.com/55060810/107971597-70e61500-6f91-11eb-9c1a-7bfed617b996.jpg)
 
 https://testimonials-grid-section-two-roan.vercel.app/
 

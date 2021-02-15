@@ -8,15 +8,15 @@
 }
 
 body {
-  background: hsl(0, 0%, 81%);
+  background: hsl(210, 46%, 95%);
   font-size: 13px;
   min-height: 100vh;
 }
 
 img {
   margin: 10px 0 10px;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 1px solid #eee;
 }
@@ -58,9 +58,9 @@ h2 {
 .box {
   display: flex;
   flex-direction: column;
-  background: hsl(263, 55%, 52%);
   border-radius: 10px;
   padding: 1rem 2.5rem;
+  box-shadow: 2px 10px 8px rgba(0, 0, 0, 0.2);
 }
 
 .daniel {
@@ -117,7 +117,7 @@ h2 {
 }
 
 .testimonials-name {
-  padding-top: 25px;
+  padding-top: 15px;
   padding-left: 15px;
   color: hsl(0, 0%, 81%);
 }
