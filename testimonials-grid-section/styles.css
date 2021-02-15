@@ -1,49 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 body {
-  font-family: "Barlow Semi Condensed", sans-serif;
-  max-width: 1440px;
-  font-size: 13px;
-  font-weight: 500;
   background: hsl(0, 0%, 81%);
+  font-size: 13px;
+  min-height: 100vh;
 }
 
-p {
+img {
+  margin: 10px 0 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+
+section {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 3rem;
+  min-height: 95vh;
+}
+
+main {
+  margin: auto;
+  display: grid;
+  max-width: 1150px;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  grid-gap: 20px;
+  grid-template-areas: 
+  'box1 box1 box2 box5'
+  'box3 box4 box4 box5'
+  ;
+}
+
+span {
+  color: white;
+  opacity: 0.5;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  background: hsl(263, 55%, 52%);
+  border-radius: 10px;
+  padding: 1rem 2.5rem;
+}
+
+.daniel {
+  grid-area: box1;
+  background-color: hsl(263, 55%, 52%);
+  background-image: url('images/bg-pattern-quotation.svg') no-repeat;
+  background-position: 90% 0;
+}
+
+.jonathan {
+  grid-area: box2;
+  background: hsl(217, 19%, 35%);
+}
+
+.jeanette {
+  grid-area: box3;
+  background: white;
+}
+
+.patrick {
+  grid-area: box4;
+  background: hsl(219, 29%, 14%);
+}
+
+.kira {
+  grid-area: box5;
+  background: white;
+}
+
+.daniel, .patrick, .jonathan, .name, h2 {
+  color: white;
+}
+
+.jeanette h2,
+.jeanette p,
+.kira h2,
+.kira p {
+  color: hsl(219, 29%, 14%);
+}
+
+.jeanette span,
+.kira span {
+  color: hsl(219, 29%, 14%);
+  opacity: 0.5;
+}
+
+.jeanette img,
+.kira img {
+  border: 1px solid hsl(219, 29%, 14%);
+}
+
+.box-img {
+  display: flex;
+}
+
+.testimonials-name {
+  padding-top: 25px;
+  padding-left: 15px;
+  color: hsl(0, 0%, 81%);
+}
+
+.name {
   font-weight: 600;
 }
 
-.content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+footer {
+  text-align: center;
 }
 
-.card01 {
-  background: hsl(263, 55%, 52%);
-  border-radius: 10px;
-  width: 900px;
-  height: 200px;
-}
-
-.card02 {
-  background: hsl(217, 19%, 35%);
-  border-radius: 10px;
-}
-
-.card03 {
-  background:hsl(0, 0%, 100%);
-  border-radius: 10px;
-}
-
-.card04 {
-  background:hsl(219, 29%, 14%);
-  border-radius: 10px;
-}
-
-
-.card05 {
-  background:hsl(0, 0%, 100%);
-  border-radius: 10px;
+@media screen and (max-width: 800px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
 }
