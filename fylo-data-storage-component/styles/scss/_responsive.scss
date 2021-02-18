@@ -1,0 +1,40 @@
+@media only screen and (max-width: 1024px) {
+  html, body {
+    background-image: url("../../images/bg-mobile.png");
+    background-size: 100vw 100vh;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .fylo {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .progress-bar {
+    padding-bottom: 5rem;
+  }
+
+  .tip {
+    right: 50%;
+    top: 140px;
+    transform: translateX(50%);
+  }
+
+  .tooltip::after {
+    content: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 350px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}

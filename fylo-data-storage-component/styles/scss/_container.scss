@@ -1,0 +1,150 @@
+@import './variables';
+
+.container {
+  align-items: flex-end;
+  color: $paleBlue;
+  display: flex;
+  font-size: 14px;
+  
+}
+
+.card {
+  background-color: $darkBlue;
+  border-radius: 10px;
+  padding: 2.5rem;
+}
+
+.fylo {
+  border-top-right-radius: 100px;
+  margin-right: 2rem;
+  padding-right: 6rem;
+}
+
+.icons {
+  display: flex;
+  margin-top: 24px;
+}
+
+.icon {
+  border-radius: 10px;
+  height: 48px;
+  width: 48px;
+  margin-right: 1rem;
+}
+
+.doc {
+  background: $veryDarkBlue url("../../images/icon-document.svg")
+  no-repeat center center;
+}
+
+.folder {
+  background: $veryDarkBlue url("../../images/icon-folder.svg")
+  no-repeat center center;
+}
+
+.upload {
+  background: $veryDarkBlue url("../../images/icon-upload.svg")
+  no-repeat center center;
+}
+
+.progress-bar {
+  position: relative;
+  width: 520px;
+
+  p {
+    margin-bottom: 1rem;
+  }
+  span {
+    font-weight: 700;
+  }
+}
+
+.slider {
+  position: relative;
+
+  &::before, &::after {
+    bottom: -24px;
+    color: $paleBlue;
+    content: '0 GB';
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+  }
+
+  &::after {
+    content: '1000 GB';
+    right: 0;
+  }
+}
+
+.tooltip {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+  position: relative;
+
+  p {
+    color: $grayishBlue;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  p span {
+    color: $veryDarkBlue;
+    font-size: 2.5rem;
+    vertical-align: middle;
+  }
+
+  &::after {
+    background-color: #fff;
+    bottom: -16px;
+    content: '';
+    height: 32px;
+    position: absolute;
+    right: -18px;
+    transform: rotate(45deg);
+    width: 32px;
+  }
+}
+
+.tip {
+  overflow: hidden;
+  padding-bottom: 20px;
+  position: absolute;
+  right: 40px;
+  top: -42px;
+}
+
+input[type=range] {
+  appearance: none;
+  cursor: pointer;
+  width: 100%;
+  outline: none;
+  height: 18px;
+  border: 3px solid rgba($veryDarkBlue, 0.9);
+  background: rgba($veryDarkBlue, 0.7) linear-gradient(90deg, $primaryGradient, $secondaryGradient) no-repeat;
+
+  &:focus {
+    background-color: $veryDarkBlue;
+    border-color: $veryDarkBlue;
+    opacity: 0.9;
+  }
+
+  &::-moz-range-thumb {
+    -moz-appearance: none;
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: $paleBlue;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: $paleBlue;
+  }
+}

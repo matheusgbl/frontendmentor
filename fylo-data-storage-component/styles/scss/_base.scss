@@ -1,0 +1,23 @@
+@import url('https://fonts.google.com/specimen/Raleway');
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+  background: $veryDarkBlue url("../../images/bg-desktop.png") no-repeat left bottom;
+  background-size: 100vw 50vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-weight: 700;
+}
